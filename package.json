@@ -1,0 +1,54 @@
+{
+	"name": "test-signature",
+	"version": "0.0.0",
+	"description": "A very lovely package. Hooray!",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ubinix-warun/test-signature"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Warun C. ⚡",
+		"email": "warun@ubinix.com"
+	},
+	"type": "module",
+	"main": "./lib/index.js",
+	"files": [
+		"lib/",
+		"package.json",
+		"LICENSE.md",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsup",
+		"format": "prettier .",
+		"lint": "eslint . --max-warnings 0",
+		"prepare": "husky",
+		"tsc": "tsc"
+	},
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.9.0",
+		"@types/eslint__js": "^8.42.3",
+		"@types/node": "^22.5.0",
+		"eslint": "^9.9.0",
+		"eslint-plugin-n": "^17.10.2",
+		"husky": "^9.1.5",
+		"lint-staged": "^15.2.9",
+		"prettier": "^3.3.3",
+		"prettier-plugin-curly": "^0.2.2",
+		"prettier-plugin-packagejson": "^2.5.1",
+		"prettier-plugin-sh": "^0.14.0",
+		"tsup": "^8.2.4",
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.2.0"
+	},
+	"engines": {
+		"node": ">=18.3.0"
+	},
+	"publishConfig": {
+		"provenance": true
+	}
+}
